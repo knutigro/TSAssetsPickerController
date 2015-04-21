@@ -36,6 +36,8 @@
     [self _configureNavigationBarButtons];
     [self _setupViews];
     [self _addActivityIndicatorToNavigationBar];
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleBordered target:nil action:nil];
 }
 
 - (void)_addActivityIndicatorToNavigationBar {
